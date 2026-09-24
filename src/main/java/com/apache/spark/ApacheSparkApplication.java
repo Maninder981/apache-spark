@@ -8,6 +8,12 @@ public class ApacheSparkApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ApacheSparkApplication.class, args);
+//        InferCSVSchema inferCSVSchema = new InferCSVSchema();
+//        inferCSVSchema.printSchema();
+//        DefineCSVSchema defineCSVSchema= new DefineCSVSchema();
+//        defineCSVSchema.printSchema();
+        JsonLineParser jsonLineParser= new JsonLineParser();
+        jsonLineParser.printSchema();
     }
 
 }
