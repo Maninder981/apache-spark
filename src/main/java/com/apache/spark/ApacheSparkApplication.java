@@ -24,6 +24,7 @@ public class ApacheSparkApplication {
         df.printSchema();
 
         System.out.println("House ingested in dataframe: "+df);
+        //Created mapper class which map the pojo class with DataSet
         Dataset<House> houseDataset = df.map(new HouseMapper(), Encoders.bean(House.class));
         System.out.println("house ingested in dataset");
         houseDataset.show();
