@@ -18,6 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
+src/main/resources/Reddit_2007-small.json
 
 ### NetBeans ###
 /nbproject/private/
