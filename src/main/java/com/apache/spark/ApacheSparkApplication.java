@@ -47,7 +47,9 @@ public class ApacheSparkApplication {
                         .or(gradesDf.col("gpa").equalTo(1.0)))
                 .select("student_name","favorite_book_title","letter_grade");
 
-        filterDf.show();
+//        filterDf.show();
+        CustomersAndProducts customersAndProducts= new CustomersAndProducts();
+        customersAndProducts.start(spark);
 
 
     }
